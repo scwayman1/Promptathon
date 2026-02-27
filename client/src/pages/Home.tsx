@@ -138,7 +138,7 @@ function HeroSection() {
             src={ASSETS.logoSecondary}
             alt="Coastline College"
             className="h-9 sm:h-11 mx-auto"
-            style={{ filter: "brightness(0) invert(1)", opacity: 0.9 }}
+            style={{ filter: "brightness(0) invert(1)", opacity: 1 }}
           />
         </motion.div>
 
@@ -167,9 +167,9 @@ function HeroSection() {
           className="text-sm sm:text-base tracking-[0.25em] uppercase mb-4"
           style={{
             fontFamily: "var(--font-body)",
-            fontWeight: 500,
-            color: "rgba(255,255,255,0.9)",
-            textShadow: "0 2px 12px rgba(0,0,0,0.4)",
+            fontWeight: 600,
+            color: "#ffffff",
+            textShadow: "0 2px 12px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.4)",
           }}
         >
           Coastline College Spring Break AI Hackathon
@@ -181,7 +181,7 @@ function HeroSection() {
           animate={{ scaleX: 1 }}
           transition={{ duration: 1.2, delay: 1.3, ease: [0.23, 1, 0.32, 1] }}
           className="w-24 h-px mx-auto mb-8"
-          style={{ background: "rgba(60,180,229,0.5)" }}
+          style={{ background: "rgba(60,180,229,0.7)" }}
         />
 
         {/* 50 years line */}
@@ -192,9 +192,9 @@ function HeroSection() {
           className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-14"
           style={{
             fontFamily: "var(--font-body)",
-            fontWeight: 400,
-            color: "rgba(184,228,245,0.85)",
-            textShadow: "0 1px 8px rgba(0,0,0,0.3)",
+            fontWeight: 500,
+            color: "rgba(200,235,250,1)",
+            textShadow: "0 2px 10px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3)",
           }}
         >
           Celebrating 50 Years of Innovation
@@ -212,9 +212,9 @@ function HeroSection() {
             style={{
               fontFamily: "var(--font-body)",
               fontWeight: 400,
-              color: "rgba(255,255,255,0.85)",
+              color: "#ffffff",
               lineHeight: 1.8,
-              textShadow: "0 1px 10px rgba(0,0,0,0.3)",
+              textShadow: "0 2px 12px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4)",
             }}
           >
             In 1976, Coastline reimagined access through distance learning.
@@ -258,8 +258,8 @@ function HeroSection() {
               fontFamily: "var(--font-body)",
               fontSize: "1.1rem",
               lineHeight: 1.9,
-              fontWeight: 500,
-              color: "rgba(255,255,255,0.95)",
+              fontWeight: 600,
+              color: "#ffffff",
             }}
           >
             Hello Coastline Colleagues,
@@ -270,8 +270,8 @@ function HeroSection() {
               fontFamily: "var(--font-body)",
               fontSize: "1.05rem",
               lineHeight: 1.9,
-              fontWeight: 300,
-              color: "rgba(255,255,255,0.8)",
+              fontWeight: 400,
+              color: "rgba(255,255,255,0.95)",
             }}
           >
             You are invited to join us for a fun, collaborative, and hands-on
@@ -283,8 +283,8 @@ function HeroSection() {
               fontFamily: "var(--font-body)",
               fontSize: "1.05rem",
               lineHeight: 1.9,
-              fontWeight: 300,
-              color: "rgba(255,255,255,0.8)",
+              fontWeight: 400,
+              color: "rgba(255,255,255,0.95)",
             }}
           >
             This three-hour event brings employees together to form teams and
