@@ -20,3 +20,4 @@
 - [x] Write vitest tests for registration API
 - [x] Fix Register Now CTA pill — too faded, needs full opacity and stronger presence
 - [x] Fix faint hero header copy — subtitle, 50 years, legacy statement need stronger contrast
+- [x] Fix hero overlay — too transparent, text fades against bright ocean background, needs much darker overlay

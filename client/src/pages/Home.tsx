@@ -94,16 +94,17 @@ function HeroSection() {
         }}
       />
 
-      {/* Gradient overlay — balanced to let the ocean image breathe while keeping text crisp */}
+      {/* Gradient overlay — dark enough for crisp white text legibility */}
       <div
         className="absolute inset-0"
         style={{
           background: `
             linear-gradient(180deg, 
-              rgba(0,15,40,0.72) 0%, 
-              rgba(0,30,65,0.45) 30%, 
-              rgba(0,30,65,0.35) 55%, 
-              rgba(0,15,40,0.8) 100%
+              rgba(0,12,35,0.88) 0%, 
+              rgba(0,25,55,0.75) 25%, 
+              rgba(0,30,60,0.68) 50%, 
+              rgba(0,20,50,0.78) 75%,
+              rgba(0,12,35,0.92) 100%
             )
           `,
         }}
