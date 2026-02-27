@@ -2,7 +2,7 @@
   DESIGN: "Cinematic Coastal" — Immersive Editorial Modernism
   Coastline College Prompt-a-thon Landing Page
   Brand: #003764 (navy), #6BC4E8 (sky), #3CB4E5 (coastal)
-  Font: Playfair Display (headlines), Source Sans 3 (body)
+  Font: Outfit (headlines), Source Sans 3 (body)
   
   ELEVATED DESIGN PRINCIPLES:
   - Full-bleed cinematic photography backgrounds
@@ -92,16 +92,16 @@ function HeroSection() {
         }}
       />
 
-      {/* Deep gradient overlay for text contrast */}
+      {/* Gradient overlay — lighter to let the ocean image breathe */}
       <div
         className="absolute inset-0"
         style={{
           background: `
             linear-gradient(180deg, 
-              rgba(0,30,60,0.7) 0%, 
-              rgba(0,55,100,0.5) 30%, 
-              rgba(0,55,100,0.4) 60%, 
-              rgba(0,30,60,0.8) 100%
+              rgba(0,20,50,0.55) 0%, 
+              rgba(0,40,80,0.3) 35%, 
+              rgba(0,40,80,0.25) 60%, 
+              rgba(0,20,50,0.7) 100%
             )
           `,
         }}
@@ -109,10 +109,10 @@ function HeroSection() {
 
       {/* Subtle animated gradient layer */}
       <div
-        className="absolute inset-0 opacity-40 animate-horizon-drift"
+        className="absolute inset-0 opacity-25 animate-horizon-drift"
         style={{
           background:
-            "linear-gradient(135deg, transparent 0%, rgba(60,180,229,0.15) 30%, transparent 50%, rgba(107,196,232,0.1) 70%, transparent 100%)",
+            "linear-gradient(135deg, transparent 0%, rgba(60,180,229,0.1) 30%, transparent 50%, rgba(107,196,232,0.08) 70%, transparent 100%)",
           backgroundSize: "300% 300%",
         }}
       />
@@ -149,9 +149,9 @@ function HeroSection() {
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "clamp(4rem, 12vw, 9rem)",
-            fontWeight: 700,
-            letterSpacing: "-0.03em",
-            textShadow: "0 4px 60px rgba(0,0,0,0.3)",
+            fontWeight: 800,
+            letterSpacing: "-0.04em",
+            textShadow: "0 2px 40px rgba(0,0,0,0.4), 0 8px 80px rgba(0,0,0,0.2)",
           }}
         >
           Prompt-a-thon
@@ -206,8 +206,8 @@ function HeroSection() {
           <p
             className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto italic"
             style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 400,
+              fontFamily: "var(--font-body)",
+              fontWeight: 300,
               color: "rgba(255,255,255,0.65)",
               lineHeight: 1.8,
             }}
@@ -342,8 +342,8 @@ function TimelineSection() {
               style={{
                 fontFamily: "var(--font-display)",
                 color: "#ffffff",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >
@@ -485,8 +485,8 @@ function EventDetailsSection() {
               style={{
                 fontFamily: "var(--font-display)",
                 color: "#003764",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >
@@ -691,7 +691,7 @@ function EventDetailsSection() {
               <p
                 className="text-base sm:text-lg max-w-2xl mx-auto italic"
                 style={{
-                  fontFamily: "var(--font-display)",
+                  fontFamily: "var(--font-body)",
                   color: "#3a5a72",
                   lineHeight: 1.9,
                   fontWeight: 400,
@@ -765,8 +765,8 @@ function WhyThisMattersSection() {
               style={{
                 fontFamily: "var(--font-display)",
                 color: "#ffffff",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >
@@ -885,8 +885,8 @@ function CollaborationSection() {
               style={{
                 fontFamily: "var(--font-display)",
                 color: "#003764",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >
@@ -983,8 +983,8 @@ function RSVPSection() {
               style={{
                 fontFamily: "var(--font-display)",
                 color: "#ffffff",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
+                fontWeight: 800,
+                letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >

@@ -56,7 +56,7 @@
   --color-foam: oklch(0.97 0.01 220);
 
   /* Font families */
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
 }
 
