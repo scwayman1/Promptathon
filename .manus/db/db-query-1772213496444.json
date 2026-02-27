@@ -1,0 +1,18 @@
+{
+  "query": "SELECT * FROM teams; SELECT * FROM team_members; SELECT * FROM individual_registrations;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2pGxiNThVLMyZ1b.5e18fdb2f15b --database A57cohGDpkEfVxfQoh3NLX --execute SELECT * FROM teams; SELECT * FROM team_members; SELECT * FROM individual_registrations;",
+  "rows": [
+    {
+      "id": "1",
+      "teamName": "The Innovators",
+      "captainName": "Scott Test",
+      "captainEmail": "scott@coastline.edu",
+      "captainDepartment": "IT Department",
+      "createdAt": "2026-02-27 17:31:04"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tteamName\tcaptainName\tcaptainEmail\tcaptainDepartment\tcreatedAt\n1\tThe Innovators\tScott Test\tscott@coastline.edu\tIT Department\t2026-02-27 17:31:04\n",
+  "stderr": "",
+  "execution_time_ms": 82
+}

@@ -1,0 +1,20 @@
+# Project TODO
+
+- [x] Basic cinematic landing page with Coastline branding
+- [x] Hero section with parallax, dolphin shield, invitation letter
+- [x] Timeline section (1976-2026)
+- [x] Event details section with schedule
+- [x] Why This Matters section
+- [x] Collaboration cards section
+- [x] RSVP section with CTA button
+- [x] Closing section and footer
+- [x] Outfit font + improved hero contrast
+- [x] Dolphin shield with rounded glass treatment
+- [x] Upgrade to full-stack with database (resolve conflicts)
+- [x] Database schema for team and individual registrations
+- [x] Registration API endpoints (tRPC procedures)
+- [x] Registration UI - team registration path
+- [x] Registration UI - individual registration path
+- [x] Redesign page to emphasize CTA throughout
+- [x] Make RSVP/registration the primary focus of the page
+- [x] Write vitest tests for registration API

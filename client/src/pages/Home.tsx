@@ -16,6 +16,7 @@
 import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import RegistrationForm from "@/components/RegistrationForm";
 
 // CDN URLs — official Coastline logos + generated cinematic imagery
 const ASSETS = {
@@ -292,6 +293,30 @@ function HeroSection() {
             are new to AI or already exploring it in your work, this event is
             designed to be welcoming, engaging, and useful for everyone.
           </p>
+        </motion.div>
+
+        {/* Hero CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2.8, ease: [0.23, 1, 0.32, 1] }}
+          className="mt-10"
+        >
+          <a
+            href="#register"
+            className="inline-block px-12 py-4 text-base sm:text-lg transition-all duration-500 hover:scale-[1.03] animate-pulse-glow"
+            style={{
+              fontFamily: "var(--font-body)",
+              fontWeight: 600,
+              background: "linear-gradient(135deg, #3CB4E5, #6BC4E8)",
+              color: "#003764",
+              letterSpacing: "0.06em",
+              textDecoration: "none",
+              borderRadius: "100px",
+            }}
+          >
+            Register Now
+          </a>
         </motion.div>
       </motion.div>
 
@@ -967,60 +992,41 @@ function CollaborationSection() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   6. RSVP SECTION — Cinematic dark with glowing CTA
+   6. REGISTRATION SECTION — The primary CTA of the page
    ═══════════════════════════════════════════════════════════ */
-function RSVPSection() {
+function RegistrationSection() {
   return (
-    <section className="relative overflow-hidden" style={{ minHeight: "70vh" }}>
-      {/* Gradient transition from light section */}
-      <div className="absolute top-0 left-0 right-0 h-24 z-20" style={{ background: "linear-gradient(180deg, #fafcfe 0%, transparent 100%)" }} />
-      {/* Neural ocean background */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(${ASSETS.neuralOcean})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "linear-gradient(180deg, rgba(0,20,40,0.88) 0%, rgba(0,30,55,0.82) 50%, rgba(0,20,40,0.9) 100%)",
-        }}
-      />
-      <div className="absolute inset-0 grain-overlay" />
-
-      <div className="relative z-10 py-28 sm:py-40 flex items-center justify-center">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <FadeIn>
+    <section id="register" className="relative overflow-hidden" style={{ background: "#fafcfe" }}>
+      <div className="relative z-10 py-20 sm:py-28">
+        <div className="max-w-3xl mx-auto px-6">
+          <FadeIn className="text-center mb-12">
             <p
               className="text-xs tracking-[0.35em] uppercase mb-6"
               style={{
                 fontFamily: "var(--font-body)",
-                color: "rgba(60,180,229,0.6)",
+                color: "#3CB4E5",
                 fontWeight: 400,
               }}
             >
               Be Part of It
             </p>
             <h2
-              className="text-4xl sm:text-5xl lg:text-6xl mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl mb-4"
               style={{
                 fontFamily: "var(--font-display)",
-                color: "#ffffff",
+                color: "#003764",
                 fontWeight: 800,
                 letterSpacing: "-0.03em",
                 lineHeight: 1.1,
               }}
             >
-              Join Us
+              Register Now
             </h2>
             <p
-              className="text-base sm:text-lg mb-14 max-w-xl mx-auto"
+              className="text-base sm:text-lg max-w-xl mx-auto"
               style={{
                 fontFamily: "var(--font-body)",
-                color: "rgba(255,255,255,0.6)",
+                color: "#4a6a82",
                 lineHeight: 1.8,
                 fontWeight: 300,
               }}
@@ -1029,34 +1035,16 @@ function RSVPSection() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.25}>
-            <a
-              href="#"
-              className="inline-block px-14 py-5 text-lg transition-all duration-500 hover:scale-[1.03] animate-pulse-glow"
-              style={{
-                fontFamily: "var(--font-body)",
-                fontWeight: 600,
-                background: "linear-gradient(135deg, #3CB4E5, #6BC4E8)",
-                color: "#003764",
-                letterSpacing: "0.08em",
-                textDecoration: "none",
-                borderRadius: "100px",
-              }}
-              onClick={(e) => {
-                e.preventDefault();
-                window.open("#", "_blank");
-              }}
-            >
-              RSVP Here
-            </a>
+          <FadeIn delay={0.2}>
+            <RegistrationForm embedded />
           </FadeIn>
 
-          <FadeIn delay={0.4}>
+          <FadeIn delay={0.35}>
             <p
-              className="mt-10 text-sm"
+              className="mt-10 text-center text-sm"
               style={{
                 fontFamily: "var(--font-body)",
-                color: "rgba(255,255,255,0.35)",
+                color: "#7a9ab2",
                 fontWeight: 300,
               }}
             >
@@ -1181,7 +1169,7 @@ export default function Home() {
       <EventDetailsSection />
       <WhyThisMattersSection />
       <CollaborationSection />
-      <RSVPSection />
+      <RegistrationSection />
       <ClosingSection />
       <Footer />
     </div>
