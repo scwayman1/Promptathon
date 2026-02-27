@@ -25,6 +25,7 @@ const ASSETS = {
   neuralOcean: "https://private-us-east-1.manuscdn.com/sessionFile/BVKmAYF3K0sU7QfnlOZL1l/sandbox/2WGfB52DDEumBXgxXvThSM-img-2_1772169723000_na1fn_YWJzdHJhY3QtbmV1cmFs.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQlZLbUFZRjNLMHNVN1FmbmxPWkwxbC9zYW5kYm94LzJXR2ZCNTJEREV1bUJYZ3hYdlRoU00taW1nLTJfMTc3MjE2OTcyMzAwMF9uYTFmbl9ZV0p6ZEhKaFkzUXRibVYxY21Gcy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=LykGNldA2h5r1cFoIx1f4dbxIBPgEQOSSCkHxCZCldPDIDqyo4sJGBdciAupb5izgtdEdhPyRaRuuHl-U1x-ldbJvew9iTZGVkQw0xaqbukG80TtzLIs9OmRvwnYLaYMhARoH0RbdhsCJEPWxBp78nm-PtLerOXpNPi8Jnu4ocJ2uvRXkDlTviePXclZz2k~QiEAG7syVAXeH1wpBvG86Gzrlhfe2quTYgp7xqvH7-Tvrd57CrnHKZzn~Ndlezv4trGBLuw-3-4KGAa-urvOmx-Zw~HAOEEKfERvQgBGoMyhyMP2eIw88x0Rq~9qxZuGTR7gbEn~4jAaWFdMIj3uxg__",
   aerialCoast: "https://private-us-east-1.manuscdn.com/sessionFile/BVKmAYF3K0sU7QfnlOZL1l/sandbox/2WGfB52DDEumBXgxXvThSM-img-3_1772169727000_na1fn_Y29sbGFib3JhdGlvbi1lbGV2YXRlZA.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQlZLbUFZRjNLMHNVN1FmbmxPWkwxbC9zYW5kYm94LzJXR2ZCNTJEREV1bUJYZ3hYdlRoU00taW1nLTNfMTc3MjE2OTcyNzAwMF9uYTFmbl9ZMjlzYkdGaWIzSmhkR2x2YmkxbGJHVjJZWFJsWkEuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=vxXRk~rnx9iMvsmKlzF5ZEB1L~LXG1tdOcBGmPbxHVs8yXxubrpxfQ62BTlrUAI-qI3he0NF6yJnmcVQeEBnHdC4fFEqbfqoBolhyKbXmEhXarx1Hoy1FamgJ~UFXffJHe2tnNYJ1~HZ11rOQS3nyLxFoZoKkutyf7PFcyieYCaR9-yGMEnfACxZpdOfNEDGgJO0yo6Z9TD5SDjacyBTsA5dlrIStjO~uOGVNZty9EVwOFEG1D5kXx2uglVtRD24qEAOHsd1CLsV81ENu9ZBP~l1CJkcEGYcR5Xs9wQk-AOgCtsVKIY9PqDMmQN53Hrhtpz5er80HXMPFIRTNW2lDQ__",
   waterTexture: "https://private-us-east-1.manuscdn.com/sessionFile/BVKmAYF3K0sU7QfnlOZL1l/sandbox/2WGfB52DDEumBXgxXvThSM-img-4_1772169717000_na1fn_dGV4dHVyZS1ncmFpbg.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQlZLbUFZRjNLMHNVN1FmbmxPWkwxbC9zYW5kYm94LzJXR2ZCNTJEREV1bUJYZ3hYdlRoU00taW1nLTRfMTc3MjE2OTcxNzAwMF9uYTFmbl9kR1Y0ZEhWeVpTMW5jbUZwYmcuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=uyfv8HRGjVxpmFzHgvoPXjxgad3sKftByY96SEP3Ei0TrQBzfg2Ofx7bBNlpyEoIo9NFw~dABMhL8f~zfAmz5jrcD~1svfziih3K78K5TFmjHgRiSEKm4~GpJ5eGqji1yUDY3gUcO-UlbdIud-n4pDHAmQWuTV17~L1py4N4q-xNTqEzVshbkK9XJhQP-wJcltliAwWg7NOaldwtw~liGQeiB806izPZyxjpampZavQ1vGeEx8EvrRjRRp4gNCXXUjb2jsdEIT96JSjpp6xn~6RWGHlQkCU4G87Pl~DLWHNKTIMUFCXUh4pG3Jme3Emr9OhlWuFTEd5mqF2VsFjDpQ__",
+  dolphinShield: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028511378/A57cohGDpkEfVxfQoh3NLX/dolphin-shield_c875c504.jpg",
   closingHorizon: "https://private-us-east-1.manuscdn.com/sessionFile/BVKmAYF3K0sU7QfnlOZL1l/sandbox/2WGfB52DDEumBXgxXvThSM-img-5_1772169731000_na1fn_Y2xvc2luZy1ob3Jpem9u.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQlZLbUFZRjNLMHNVN1FmbmxPWkwxbC9zYW5kYm94LzJXR2ZCNTJEREV1bUJYZ3hYdlRoU00taW1nLTVfMTc3MjE2OTczMTAwMF9uYTFmbl9ZMnh2YzJsdVp5MW9iM0pwZW05dS5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=VCxtFtSZo5HQXNwfpKupop7fQakyR6N4-AOBIoyCjYbGBPvByzhfX8M~gmMs5qfWempP3vP8b2Hov1dGj0Lg9z7awfxd7yRK75A7HqyBggfhQF2OHzExF6-cwsb2FicLtxEOrYTf3WZ-f8aTn7XASKn3-01r6S2nwA8Vc0OoELdRj-QbIvSqydZa848jhG~LjCl9oplCdH7fvaC~OU7O90QI1L8e1nmbZ1M~UijtPmPTQIuwT0kZAgRvZPO6WG3sZUtFgXS620Tdbha-iIJ9F2ZMFdpGsCwqtxfn0~UEUa5qP3E1BdaAyEnl6NxwQrC1Eio9aNeXYkoFU7RVJH2aOw__",
 };
 
@@ -92,16 +93,16 @@ function HeroSection() {
         }}
       />
 
-      {/* Gradient overlay — lighter to let the ocean image breathe */}
+      {/* Gradient overlay — balanced to let the ocean image breathe while keeping text crisp */}
       <div
         className="absolute inset-0"
         style={{
           background: `
             linear-gradient(180deg, 
-              rgba(0,20,50,0.55) 0%, 
-              rgba(0,40,80,0.3) 35%, 
-              rgba(0,40,80,0.25) 60%, 
-              rgba(0,20,50,0.7) 100%
+              rgba(0,15,40,0.72) 0%, 
+              rgba(0,30,65,0.45) 30%, 
+              rgba(0,30,65,0.35) 55%, 
+              rgba(0,15,40,0.8) 100%
             )
           `,
         }}
@@ -140,7 +141,7 @@ function HeroSection() {
           />
         </motion.div>
 
-        {/* Headline — dramatic editorial scale */}
+        {/* Headline — dramatic editorial scale with strong contrast */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -151,7 +152,7 @@ function HeroSection() {
             fontSize: "clamp(4rem, 12vw, 9rem)",
             fontWeight: 800,
             letterSpacing: "-0.04em",
-            textShadow: "0 2px 40px rgba(0,0,0,0.4), 0 8px 80px rgba(0,0,0,0.2)",
+            textShadow: "0 4px 30px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.5), 0 12px 80px rgba(0,0,0,0.3)",
           }}
         >
           Prompt-a-thon
@@ -165,8 +166,9 @@ function HeroSection() {
           className="text-sm sm:text-base tracking-[0.25em] uppercase mb-4"
           style={{
             fontFamily: "var(--font-body)",
-            fontWeight: 400,
-            color: "rgba(255,255,255,0.7)",
+            fontWeight: 500,
+            color: "rgba(255,255,255,0.9)",
+            textShadow: "0 2px 12px rgba(0,0,0,0.4)",
           }}
         >
           Coastline College Spring Break AI Hackathon
@@ -189,8 +191,9 @@ function HeroSection() {
           className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-14"
           style={{
             fontFamily: "var(--font-body)",
-            fontWeight: 300,
-            color: "rgba(184,228,245,0.6)",
+            fontWeight: 400,
+            color: "rgba(184,228,245,0.85)",
+            textShadow: "0 1px 8px rgba(0,0,0,0.3)",
           }}
         >
           Celebrating 50 Years of Innovation
@@ -207,9 +210,10 @@ function HeroSection() {
             className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto italic"
             style={{
               fontFamily: "var(--font-body)",
-              fontWeight: 300,
-              color: "rgba(255,255,255,0.65)",
+              fontWeight: 400,
+              color: "rgba(255,255,255,0.85)",
               lineHeight: 1.8,
+              textShadow: "0 1px 10px rgba(0,0,0,0.3)",
             }}
           >
             In 1976, Coastline reimagined access through distance learning.
@@ -218,11 +222,33 @@ function HeroSection() {
           </p>
         </motion.div>
 
+        {/* Dolphin shield logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, delay: 2.0, ease: [0.23, 1, 0.32, 1] }}
+          className="mb-12 flex justify-center"
+        >
+          <img
+            src={ASSETS.dolphinShield}
+            alt="Coastline College Dolphins"
+            className="h-28 sm:h-36 md:h-40 rounded-2xl"
+            style={{
+              filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.35))",
+              border: "2px solid rgba(255,255,255,0.15)",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.08)",
+              background: "rgba(255,255,255,0.08)",
+              backdropFilter: "blur(8px)",
+              padding: "8px",
+            }}
+          />
+        </motion.div>
+
         {/* Glass panel invitation */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 2.1, ease: [0.23, 1, 0.32, 1] }}
+          transition={{ duration: 1.2, delay: 2.4, ease: [0.23, 1, 0.32, 1] }}
           className="glass-panel p-8 sm:p-10 md:p-14 text-left max-w-3xl mx-auto"
         >
           <p
