@@ -75,13 +75,12 @@ function HeroSection() {
     offset: ["start start", "end start"],
   });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -60]);
+  // Removed scroll-fade effect — content stays fully visible
 
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center overflow-hidden"
     >
       {/* Cinematic background image with parallax */}
       <motion.div
@@ -123,10 +122,9 @@ function HeroSection() {
       {/* Film grain texture */}
       <div className="absolute inset-0 grain-overlay" />
 
-      {/* Content */}
-      <motion.div
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
-        style={{ opacity: contentOpacity, y: contentY }}
+      {/* Content — no scroll-fade, stays fully visible */}
+      <div
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 sm:pt-32"
       >
         {/* Logo */}
         <motion.div
@@ -296,9 +294,9 @@ function HeroSection() {
           </p>
         </motion.div>
 
-      </motion.div>
+      </div>
 
-      {/* Hero CTA Button — outside the parallax-fade container so it stays fully visible */}
+      {/* Hero CTA Button */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
