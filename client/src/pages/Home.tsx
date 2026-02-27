@@ -295,29 +295,33 @@ function HeroSection() {
           </p>
         </motion.div>
 
-        {/* Hero CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 2.8, ease: [0.23, 1, 0.32, 1] }}
-          className="mt-10"
+      </motion.div>
+
+      {/* Hero CTA Button — outside the parallax-fade container so it stays fully visible */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 2.8, ease: [0.23, 1, 0.32, 1] }}
+        className="relative z-20 mt-12 text-center"
+      >
+        <a
+          href="#register"
+          className="inline-block px-14 py-5 text-lg sm:text-xl transition-all duration-300 hover:scale-[1.05] hover:brightness-110"
+          style={{
+            fontFamily: "var(--font-display)",
+            fontWeight: 700,
+            background: "linear-gradient(135deg, #3CB4E5 0%, #6BC4E8 100%)",
+            color: "#ffffff",
+            letterSpacing: "0.04em",
+            textDecoration: "none",
+            borderRadius: "100px",
+            boxShadow: "0 0 30px rgba(60,180,229,0.5), 0 0 60px rgba(60,180,229,0.2), 0 4px 20px rgba(0,0,0,0.3)",
+            textShadow: "0 1px 3px rgba(0,55,100,0.4)",
+            border: "2px solid rgba(255,255,255,0.25)",
+          }}
         >
-          <a
-            href="#register"
-            className="inline-block px-12 py-4 text-base sm:text-lg transition-all duration-500 hover:scale-[1.03] animate-pulse-glow"
-            style={{
-              fontFamily: "var(--font-body)",
-              fontWeight: 600,
-              background: "linear-gradient(135deg, #3CB4E5, #6BC4E8)",
-              color: "#003764",
-              letterSpacing: "0.06em",
-              textDecoration: "none",
-              borderRadius: "100px",
-            }}
-          >
-            Register Now
-          </a>
-        </motion.div>
+          Register Now
+        </a>
       </motion.div>
 
       {/* Scroll indicator */}

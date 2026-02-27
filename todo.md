@@ -18,3 +18,4 @@
 - [x] Redesign page to emphasize CTA throughout
 - [x] Make RSVP/registration the primary focus of the page
 - [x] Write vitest tests for registration API
+- [x] Fix Register Now CTA pill — too faded, needs full opacity and stronger presence
